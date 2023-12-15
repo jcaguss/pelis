@@ -1,0 +1,95 @@
+:root {
+    --rojo : #810;
+    --fondo : rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logoT{
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+header nav a {
+    color: #dbdbdb;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover,
+header nav a.activo {
+    color : #fff;
+}
+
+/*Imagen Fondo*/
+
+.portada-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: url(/img/portadaP.jpg), linear-gradient(#900 0%, #000 100%);
+    background-position: center center;
+    background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.portada-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.portada-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.portada-principal .descipcion-portada{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.portada-principal .boton{
+    background: rgba(0,0,0,.5);
+    border: none;
+    border-radius: .31em;
+    color: #fff;
+    padding: 0.93em 1.87em;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-top: 1.25em;
+    place-items: 2px;
+}
+
+.portada-principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.portada-principal .boton i{
+    margin-right: 1.25em;
+}
